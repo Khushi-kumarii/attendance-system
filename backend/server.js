@@ -22,9 +22,9 @@ app.use('/api/reports', require('./routes/report.routes'));
     await seedAdmin();
 
     const PORT = process.env.PORT || 5000;
-    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   } catch (err) {
-    console.error('❌ Server startup failed:', err.message);
+    console.error('Server startup failed:', err.message);
     process.exit(1);
   }
 })();
